@@ -1,4 +1,3 @@
-Project_1:
 Diabetes Prediction using Machine Learning This project uses machine learning algorithms to predict whether a person has diabetes based on medical diagnostic measurements such as glucose level, BMI, insulin level, blood pressure, and age. The model is trained using the PIMA Indians Diabetes Dataset
 
 Diabetes Prediction using Machine Learning
