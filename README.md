@@ -17,7 +17,7 @@ The model is trained using the **PIMA Indians Diabetes Dataset** and compares mu
 
 ## 📊 Dataset
 - **Name:** PIMA Indians Diabetes Dataset  
-- Contains medical data of female patients  
+- Contains medical diagnostic data of female patients  
 
 ### 🔑 Features:
 - Pregnancies  
@@ -36,8 +36,15 @@ The model is trained using the **PIMA Indians Diabetes Dataset** and compares mu
 
 ---
 
+## 🧠 Feature Engineering
+- Data preprocessing and standardization  
+- Handling missing/zero values  
+- Feature scaling for better model performance  
+
+---
+
 ## 🛠️ Technologies Used
-- Python  
+- Python 🐍  
 - NumPy  
 - Pandas  
 - Scikit-learn  
@@ -49,21 +56,9 @@ The model is trained using the **PIMA Indians Diabetes Dataset** and compares mu
 ## 🤖 Machine Learning Algorithms
 The following models were implemented and compared:
 
-- Support Vector Machine (SVM) ✅  
+- Support Vector Machine (SVM) ✅ (Best Performing)  
 - Logistic Regression  
 - Random Forest  
-
----
-
-## 📈 Model Performance
-
-|          Model         | Accuracy   |
-|------------------------|------------|
-| Support Vector Machine | **78.66%** |
-| Logistic Regression    | 75.97%     |
-| Random Forest          | 74.02%     |
-
-👉 **SVM performed the best among all models**
 
 ---
 
@@ -71,17 +66,59 @@ The following models were implemented and compared:
 1. Load the dataset  
 2. Data exploration and analysis  
 3. Data preprocessing and standardization  
-4. Train-test split  
+4. Train-test data splitting  
 5. Train machine learning models  
-6. Evaluate models using:
+6. Model evaluation using:
    - Accuracy score  
    - Confusion matrix  
    - Classification report  
-7. Visualize results  
+7. Visualization of results  
 8. Predict diabetes for new input data  
+
+---
+
+## 📈 Model Performance
+
+| Model | Accuracy |
+|------|--------|
+| Support Vector Machine | **78.66%** |
+| Logistic Regression | 75.97% |
+| Random Forest | 74.02% |
+
+👉 **SVM achieved the highest accuracy**
+
+---
+
+## 📊 Evaluation Metrics
+- Accuracy Score  
+- Confusion Matrix  
+- Precision, Recall, F1-score  
+
+---
+
+## 📊 Visualizations
+- Diabetes outcome distribution  
+- Confusion matrix heatmap  
+- Model performance comparison  
 
 ---
 
 ## 🔍 Example Prediction
 
 **Input:**
+(6, 148, 72, 35, 0, 33.6, 0.627, 50)
+
+**Output:**
+Diabetic
+---
+🏆 Conclusion
+This project demonstrates how machine learning can assist in early diabetes detection using medical data. Among the models tested, Support Vector Machine achieved the best performance, making it the most effective model for this task.
+---
+💡 Key Learnings
+Importance of data preprocessing and scaling
+Model comparison improves decision-making
+Visualization helps interpret results
+Machine learning can support healthcare diagnostics
+---
+👨‍💻 Author
+Shriram Baskaran
